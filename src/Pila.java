@@ -1,10 +1,11 @@
 import java.util.ArrayList;
 
 public class Pila <T>{
-    private ArrayList <T> lista;
+    private ArrayList <T> lista =  new ArrayList<>();
+    private int id;
 
-    public Pila(){
-        lista = new ArrayList<>();
+    public Pila(int id){
+        this.id=id;
     }
     public void push(T elemento){
         lista.add(elemento);
