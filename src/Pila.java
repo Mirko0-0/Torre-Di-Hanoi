@@ -31,13 +31,26 @@ public class Pila <T>{
         return lista.size();
     }
 
-    public ArrayList<T> getElements() {
-        return new ArrayList<>(lista);
-    }
-
     public boolean isEmpty(){
         return lista.isEmpty();
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public ArrayList<T> getLista() {
+        return lista;
+    }
+
+    public void setLista(ArrayList<T> lista) {
+        this.lista = lista;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
 
     @Override
     public String toString() {

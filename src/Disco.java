@@ -1,16 +1,16 @@
 public class Disco {
-    int numeroDisco;
+    private int dimensione;
 
-    public Disco(int numeroDisco){
-        this.numeroDisco=numeroDisco;
+    public Disco(int dimensione) {
+        this.dimensione = dimensione;
     }
 
-    public int getNumeroDisco() {
-        return numeroDisco;
+    public int getDimensione() {
+        return dimensione;
     }
 
-    public void setNumeroDisco(int numeroDisco) {
-        this.numeroDisco = numeroDisco;
+    @Override
+    public String toString() {
+        return String.valueOf(dimensione);
     }
-
 }
